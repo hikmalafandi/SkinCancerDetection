@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Atur warna latar belakang sesuai dengan keinginan Anda -->
+        <item name="android:background">@color/white</item>
+        <!-- Atur warna teks dan atribut lainnya sesuai keinginan Anda -->
+        <item name="android:textColorPrimary">@color/blue</item>
+        <!-- Atur atribut lainnya sesuai dengan keinginan Anda -->
+    </style>
+
+</resources>

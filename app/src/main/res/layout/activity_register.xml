@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@color/white"
+    tools:context=".ui.register.RegisterActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:progressTint="@color/lightblue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBar"
+            tools:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/img_register"
+            android:layout_width="292dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/picture_register"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/img_register"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.submission.humic.ui.customeview.EmailEditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:inputType="textEmailAddress"
+            android:alpha="0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/ed_email"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.submission.humic.ui.customeview.PasswordEditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:inputType="textPassword"
+            android:alpha="0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/ed_password"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.submission.humic.ui.customeview.EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:inputType="text"
+            android:alpha="0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/ed_name"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.submission.humic.ui.customeview.EditText
+            android:id="@+id/ed_gender"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:inputType="text"
+            android:alpha="0"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_gender" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_phone"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/ed_gender"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.submission.humic.ui.customeview.EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:inputType="phone"
+            android:alpha="0"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="120dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/register"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_semibold"
+            android:background="@drawable/button_background"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/ed_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
